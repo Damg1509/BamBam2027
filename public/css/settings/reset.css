@@ -1,0 +1,46 @@
+@charset "utf-8";
+@layer reset{
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        min-width:0;
+        image-rendering:pixelated;
+    }
+    :where(html,body){
+        width:100%;
+        min-height:100dvh;
+    }
+    :where(header, main, footer, section,article){
+        container-type:inline-size;
+    }
+    
+    :where(h1, h2, h3, h4, h5, h6){
+        text-wrap:balance;
+    }
+    :where(p, li){
+        text-wrap:pretty;
+        white-space:break-spaces;
+    }
+    a{
+      text-decoration:none;
+    }
+    :where(a, button, input, optgroup, select, textarea){
+        font-family:inherit;
+        font-size:100%;
+        line-height:1.15;
+        margin:0;
+        hyphens:auto;
+        appearance:none;
+    }
+    button{
+        cursor:pointer;
+    }
+    table{
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+    br{
+        margin-bottom:1em;
+    }
+}
