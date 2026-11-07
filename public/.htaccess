@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Base para subcarpeta en MAMP
+RewriteBase /DAMG/Clientes/BamBam/vrs7.0/public/
+
+# Redirección al Front Controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
